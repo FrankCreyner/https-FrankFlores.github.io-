@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos css</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="proyectosCss/css/style.css">
+    <link rel="stylesheet" href="proyectosCss/css/style.css">
+    <link rel="stylesheet" href="proyectosCss/css/style1.css">
+    <link rel="stylesheet" href="proyectosCss/css/style2.css">
+    <link rel="stylesheet" href="proyectosCss/css/style3.css">
+    <link rel="stylesheet" href="proyectosCss/css/style4.css">
+    <link rel="stylesheet" href="proyectosCss/css/style5.css">
+    <link rel="stylesheet" href="proyectosCss/css/style6.css">
+    <link rel="stylesheet" href="proyectosCss/css/style7.css">
+    <link rel="stylesheet" href="proyectosCss/css/style8.css">
+    <link rel="stylesheet" href="proyectosCss/css/style9.css">
+    <link rel="stylesheet" href="proyectosCss/css/style10.css">
+    <link rel="stylesheet" href="proyectosCss/css/style11.css">
+    <link rel="stylesheet" href="proyectosCss/css/style12.css">
+    <link rel="stylesheet" href="proyectosCss/css/style13.css">
+    <link rel="stylesheet" href="proyectosCss/css/style14.css">
+    <link rel="stylesheet" href="proyectosCss/css/style15.css">
+    <link rel="stylesheet" href="proyectosCss/css/style16.css">
+    <link rel="stylesheet" href="proyectosCss/css/style17.css">
+    <link rel="stylesheet" href="proyectosCss/css/style18.css">
+    <link rel="stylesheet" href="proyectosCss/css/style19.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Francisco Javier Flores Padilla <span style="color: #201E43;">Ingeniero en Computación</span>
+        </h1>
+    </header>
+
+    <div class="nav-bg">
+        <div class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </div>
+    </div>
+    <div>
+
+        <nav>
+
+            <div class="mobile">
+                <div class="header">
+                    <div class="logo">Logo</div>
+                    <div class="more"><button id="bMore"><span class="material-symbols-outlined">menu</span></button>
+                    </div>
+                </div>
+                <div id="links" class="links collapsed">
+                    <a href="#">Servicios</a>
+                    <a href="#">Acerca de</a>
+                    <a href="#">Contacot</a>
+                    <a href="#">Buscar</a>
+                    <a href="#">Registrarse</a>
+                    <a href="#">Iniciar Sesión</a>
+                </div>
+            </div>
+            <div class="desktop">
+                <div class="logo">Logo</div>
+
+                <div class="primary">
+                    <a href="#">Servicios</a>
+                    <a href="#">Acerca de</a>
+                    <a href="#">Contacto</a>
+                </div>
+
+                <div class="secondary full">
+                    <a href="#">Buscar</a>
+                    <a href="#">Registrarse</a>
+                    <a href="#">Iniciar Sesión</a>
+                </div>
+                <div class="secondary mini">
+                    <div class="more"><button id="bMore"><span class="material-symbols-outlined">menu</span></div>
+                    <div class="submenu">
+                        <a href="#">Registrarse</a>
+                        <a href="#">Iniciar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <script>
+            const bMore = document.querySelector("#bMore");
+            const links = document.querySelector("#links");
+
+            bMore.addEventListener("click", (e) => {
+                links.classList.toggle("collapsed");
+            })
+
+        </script>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="header">
+                <div class="date">20 de septiembre de 2024</div>
+                <div class="title">Programación para internet</div>
+            </div>
+            <div class="footer">
+                <div class="author">
+                    <a href="#">
+                        <img src="" alt="" />
+                        <span>Francisco Flores</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card element-1">
+            <div class="header">
+                <div class="date">20 de septiembre de 2024</div>
+                <div class="title">Tarjetas animadas usando CSS</div>
+            </div>
+            <div class="footer">
+                <div class="author">
+                    <a href="#">
+                        <img src="" alt="" />
+                        <span>Francisco Flores</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card element-2">
+            <div class="header">
+                <div class="date">20 de septiembre de 2024</div>
+                <div class="title">02 CSS</div>
+            </div>
+            <div class="footer">
+                <div class="author">
+                    <a href="#">
+                        <img src="" alt="" />
+                        <span>Francisco Flores</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card element-3">
+            <div class="header">
+                <div class="date">20 de septiembre de 2024</div>
+                <div class="title">
+                    <a href="#">Como funcionan las cascade layers</a>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="author">
+                    <a href="#">
+                        <img src="" alt="" />
+                        <span>Francisco Flores</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <caption>
+            <h1>Mi Primera Tabla</h1>
+        </caption>
+        <thead>
+            <tr>
+                <th>titulo 1</th>
+                <th>titulo 2</th>
+                <th>titulo 3</th>
+                <th>titulo 3</th>
+                <th>titulo 3</th>
+                <th>titulo 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Francisco Flores</td>
+                <td>México</td>
+                <td>Ultra Ball</td>
+                <td>Super Ball</td>
+                <td>Poke Ball</td>
+                <td>Master Ball</td>
+            </tr>
+            <tr>
+                <td>Francisco Flores</td>
+                <td>México</td>
+                <td>Ultra Ball</td>
+                <td>Super Ball</td>
+                <td>Poke Ball</td>
+                <td>Master Ball</td>
+            </tr>
+            <tr>
+                <td>Francisco Flores</td>
+                <td>México</td>
+                <td>Ultra Ball</td>
+                <td>Super Ball</td>
+                <td>Poke Ball</td>
+                <td>Master Ball</td>
+            </tr>
+            <tr>
+                <td>Francisco Flores</td>
+                <td>México</td>
+                <td>Ultra Ball</td>
+                <td>Super Ball</td>
+                <td>Poke Ball</td>
+                <td>Master Ball</td>
+            </tr>
+            <tr>
+                <td>Francisco Flores</td>
+                <td>México</td>
+                <td>Ultra Ball</td>
+                <td>Super Ball</td>
+                <td>Poke Ball</td>
+                <td>Master Ball</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Mewtwo</th>
+                <th>Arcanine</th>
+                <th>Meganium</th>
+                <th>Primeape</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="notification">
+        <div class="count">21</div>
+        <span class="material-icons">notifications</span>
+    </div>
+
+
+    <div class="form-container">
+        <div class="login-container">
+            <h2>Bienvenido</h2>
+            <p>Iniciar sesión</p>
+
+            <form action="">
+                <p>
+                    <label for="username">Correo/usuario</label>
+                    <input class="input" type="text" name="username" />
+                </p>
+
+                <p>
+                    <label for="password">Contraseña</label>
+                    <input class="input" type="password" name="password" />
+                </p>
+
+                <div class="options">
+                    <div>
+                        Guardar información <input type="checkbox" name="remeberme" id="" />
+                    </div>
+                    <div>
+                        <a href="#">Olvidé mi contraseña</a>
+                    </div>
+                </div>
+
+                <p>
+                    <input class="btn btn-login" type="submit" value="Iniciar sesión" />
+                </p>
+                <div class="providers">
+                    <span>Otros métodos para iniciar sesión</span>
+                    <button class="btn google-provider">Google</button>
+                    <button class="btn facebook-provider">Facebook</button>
+                    <button class="btn twitter-provider">Twitter</button>
+                </div>
+            </form>
+        </div>
+        <div class="welcome-screen-container"></div>
+    </div>
+
+    <div class="progressbar-container">
+        <div class="outer-box">
+            <div class="inner-box">50%</div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#134B70" />
+                        <stop offset="100%" stop-color="#508C9B" />
+                    </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="80" stroke-linecap="round" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="price-table-container">
+        <div class="table">
+            <div class="title">Plan chikorita</div>
+            <div class="price">
+                <span class="currency">$</span>
+                <span class="number">99</span>
+                <span class="frequency">/mes</span>
+            </div>
+            <div class="features">
+                <ul>
+                    <li>
+                        <span class="material-icons check_circle"> check_circle </span>Acceso 24/7
+                    </li>
+                    <li>
+                        <span class="material-icons check_circle"> check_circle </span>Mantenimiento
+                    </li>
+                    <li>
+                        <span class="material-icons check_circle"> check_circle </span>Oportunidades
+                    </li>
+                </ul>
+            </div>
+            <div class="actions">
+                <a href="#" class="btn">Prueba gratis</a>
+            </div>
+        </div>
+
+        <div class="table recommended">
+            <div class="title">Plan Bayleef</div>
+            <div class="price">
+                <span class="currency">$</span>
+                <span class="number">130</span>
+                <span class="frequency">/mes</span>
+            </div>
+            <div class="features">
+                <ul>
+                    <li>
+                        <span class="material-icons check_circle"> check_circle </span>Servicio personalizado
+
+                    </li>
+                    <li>
+                        <span class="material-icons check_circle"> check_circle </span>Más cursos
+                    </li>
+                    <li>
+                        <span class="material-icons check_circle"> check_circle </span>Ofertas especiales
+                    </li>
+                </ul>
+            </div>
+            <div class="actions">
+                <a href="#" class="btn recommended">Prueba gratis</a>
+            </div>
+        </div>
+
+        <div class="table">
+            <div class="title">Plan Meganium</div>
+            <div class="price">
+                <span class="currency">$</span>
+                <span class="number">199</span>
+                <span class="frequency">/mes</span>
+            </div>
+            <div class="features">
+                <ul>
+                    <li>
+                        <span class="material-icons check_circle"> check_circle </span>Ayuda primordial
+                    </li>
+                    <li>
+                        <span class="material-icons check_circle"> check_circle </span>Personal Trainer
+                    </li>
+                    <li>
+                        <span class="material-icons check_circle"> check_circle </span>Regalos exclusivos
+                    </li>
+                </ul>
+            </div>
+            <div class="actions">
+                <a href="#" class="btn">Prueba gratis</a>
+            </div>
+        </div>
+    </div>
+
+    <label class="checkbox-container">Soy un checkbox
+        <input type="checkbox" />
+        <span class="checkmark">
+            <span class="material-icons">check</span>
+        </span>
+    </label>
+
+    <label class="checkbox-container">Soy un radio button
+        <input type="radio" name="a" />
+        <span class="checkmark radio">
+            <div class="circle"></div>
+        </span>
+    </label>
+    <label class="checkbox-container">Soy un radio button
+        <input type="radio" name="a" />
+        <span class="checkmark radio">
+            <div class="circle"></div>
+        </span>
+    </label>
+
+    <div class="search-bar">
+        <input type="text" />
+        <div class="actions">
+            <button><span class="material-icons"> mic </span></button>
+            <button><span class="material-icons"> document_scanner </span></button>
+            <button>
+                <span class="material-icons"> search </span>
+            </button>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/img1.jpg" alt="Avatar" style="width: 300px; height: 300px" />
+                </div>
+                <div class="flip-card-back">
+                    <h1>Metroid</h1>
+                    <p>Samus vs. Mother brain</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/img2.png" alt="Avatar" style="width: 300px; height: 300px" />
+                </div>
+                <div class="flip-card-back">
+                    <h1>Metroid</h1>
+                    <p>Samus y parásitos</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/img3.jpg" alt="Avatar" style="width: 300px; height: 300px" />
+                </div>
+                <div class="flip-card-back">
+                    <h1>Metroid</h1>
+                    <p>Samus vs. Ridley</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="comments-container">
+        <div class="comment">
+            <div class="comment-wrapper">
+                <div class="content">
+                    <div class="user-photo">
+                    </div>
+                    <div class="comment-info">
+                        <div class="header">
+                            <span class="username">@user1</span>
+                            <span class="date">1 day ago</span>
+                        </div>
+                        <div class="text">Este es un comentario</div>
+                        <div class="actions">
+                            <button>Like</button>
+                            <button>Reply</button>
+                            <button>Share</button>
+                            <button>Follow</button>
+                            <button>Report</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="replies">
+                    <div class="comment">
+                        <div class="line"></div>
+                        <div class="comment-wrapper">
+                            <div class="content">
+                                <div class="user-photo">
+                                </div>
+                                <div class="comment-info">
+                                    <div class="header">
+                                        <span class="username">@user2</span>
+                                        <span class="date">1 day ago</span>
+                                    </div>
+                                    <div class="text">Este es un comentario</div>
+                                    <div class="actions">
+                                        <button>Like</button>
+                                        <button>Reply</button>
+                                        <button>Share</button>
+                                        <button>Follow</button>
+                                        <button>Report</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="line"></div>
+                        <div class="comment-wrapper">
+                            <div class="content">
+                                <div class="user-photo">
+                                </div>
+                                <div class="comment-info">
+                                    <div class="header">
+                                        <span class="username">@user3</span>
+                                        <span class="date">15hrs ago</span>
+                                    </div>
+                                    <div class="text">Este es un comentario</div>
+                                    <div class="actions">
+                                        <button>Like</button>
+                                        <button>Reply</button>
+                                        <button>Share</button>
+                                        <button>Follow</button>
+                                        <button>Report</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-wrapper">
+                <div class="content">
+                    <div class="user-photo">
+                    </div>
+                    <div class="comment-info">
+                        <div class="header">
+                            <span class="username">@user2</span>
+                            <span class="date">2 day ago</span>
+                        </div>
+                        <div class="text">Este es un comentario</div>
+                        <div class="actions">
+                            <button>Like</button>
+                            <button>Reply</button>
+                            <button>Share</button>
+                            <button>Follow</button>
+                            <button>Report</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="replies">
+                    <div class="comment">
+                        <div class="line"></div>
+                        <div class="comment-wrapper">
+                            <div class="content">
+                                <div class="user-photo">
+                                </div>
+                                <div class="comment-info">
+                                    <div class="header">
+                                        <span class="username">@user1</span>
+                                        <span class="date">1 day ago</span>
+                                    </div>
+                                    <div class="text">Este es un comentario</div>
+                                    <div class="actions">
+                                        <button>Like</button>
+                                        <button>Reply</button>
+                                        <button>Share</button>
+                                        <button>Follow</button>
+                                        <button>Report</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="line"></div>
+                        <div class="comment-wrapper">
+                            <div class="content">
+                                <div class="user-photo">
+                                </div>
+                                <div class="comment-info">
+                                    <div class="header">
+                                        <span class="username">@user2</span>
+                                        <span class="date">8hrs ago</span>
+                                    </div>
+                                    <div class="text">Este es un comentario</div>
+                                    <div class="actions">
+                                        <button>Like</button>
+                                        <button>Reply</button>
+                                        <button>Share</button>
+                                        <button>Follow</button>
+                                        <button>Report</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="personas-container">
+        <div class="persona">
+            <img src="img/profile1.jpg" alt="" />
+            <span class="name">
+                <span class="text"> Ramon Corona</span>
+            </span>
+        </div>
+        <div class="persona">
+            <img src="img/profile2.jpg" alt="" />
+            <span class="name">
+                <span class="text"> Pedro Jimenez</span>
+            </span>
+        </div>
+        <div class="persona">
+            <img src="img/profile3.jpg" alt="" />
+            <span class="name">
+                <span class="text"> Alfredo Infante</span>
+            </span>
+        </div>
+        <div class="persona">
+            <img src="img/profile4.jpg" alt="" />
+            <span class="name">
+                <span class="text"> Jose Jimenez</span>
+            </span>
+        </div>
+        <div class="persona">
+            <img src="img/profile5.jpg" alt="" />
+            <span class="name">
+                <span class="text"> Natalia Durcal</span>
+            </span>
+        </div>
+    </div>
+
+    <nav>
+        <header>
+            <div class="bar"></div>
+            <div class="user">
+                <img src="img/profile4.jpg" alt="" />
+                <div class="name">Francisco Flores</div>
+            </div>
+        </header>
+
+        <div class="links">
+            <a href="#">
+                <div class="icon">
+                    <span class="iconify" data-icon="flat-color-icons:assistant" data-width="32"
+                        data-height="32"></span>
+                </div>
+                <div class="title">Asistencia Remota</div>
+            </a>
+            <a href="#">
+                <div class="icon">
+                    <span class="iconify" data-icon="flat-color-icons:calendar" data-width="32" data-height="32"></span>
+                </div>
+                <div class="title">Calendario</div>
+            </a>
+            <a href="#">
+                <div class="icon">
+                    <span class="iconify" data-icon="flat-color-icons:automatic" data-width="32"
+                        data-height="32"></span>
+                </div>
+                <div class="title">Configuraciones</div>
+            </a>
+            <a href="#">
+                <div class="icon">
+                    <span class="iconify" data-icon="flat-color-icons:bearish" data-width="32" data-height="32"></span>
+                </div>
+                <div class="title">Analiticas</div>
+            </a>
+            <a href="#">
+                <div class="icon">
+                    <span class="iconify" data-icon="flat-color-icons:compact-camera" data-width="32"
+                        data-height="32"></span>
+                </div>
+                <div class="title">Fotos</div>
+            </a>
+        </div>
+    </nav>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+
+    <div class="chat-container">
+        <div class="bubble-container right">
+            <div class="bubble">
+                <div class="bubble-text">
+                    <div>
+                        <span> Hola, soy un mensaje</span>
+                        <div class="bubble-info">6 min ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bubble">
+                <div class="bubble-text">
+                    <div>
+                        <span> Hola, soy otro mensaje</span>
+                        <div class="bubble-info">5 min ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bubble">
+                <div class="bubble-text">
+                    <div>
+                        <span> Hola, soy otro mensaje</span>
+                        <div class="bubble-info">4 min ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bubble-container left">
+            <div class="bubble">
+                <div class="bubble-text">
+                    <div>
+                        <span> Hola</span>
+                        <div class="bubble-info">3 min ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bubble">
+                <div class="bubble-text">
+                    <div class="content">
+                        <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos laudantium
+                            debitis qui cumque magni excepturi pariatur nostrum placeat eveniet delectus velit,
+                            necessitatibus iure nemo non fugiat dolor minus possimus.</span>
+                        <div class="bubble-info">1 min ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container">
+        <div class="modal">
+            <div class="content">
+                <div class="icon">
+                    <img src="proyectosCss/check-svgrepo-com.svg" width="48" alt="" />
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <h3>Hola, soy un modal.</h3>
+                    </div>
+                    <div class="text">¿Deseas confirmar los cambios?</div>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="btn-confirm">Crear elemento</button>
+                <button class="btn-cancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="upload-container">
+        <div class="title">CARGAR ARCHIVOS</div>
+        <div class="description">
+            Carga los archivos que deseas compartir.
+        </div>
+        <div class="drag-drop">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                        d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3zM8 13h2.55v3h2.9v-3H16l-4-4z" />
+                </svg>
+            </div>
+            <div>Arrastra y suelta los archivos. <br />O</div>
+            <button class="btn">Buscar archivos...</button>
+        </div>
+
+        <div class="title-section">SUBIR ARCHIVOS</div>
+        <div class="uploaded-files">
+            <div class="file">
+                <div class="icon">
+                    <img src="img/word icon.png" width="48" alt="" />
+                </div>
+                <div class="title">
+                    <span class="name">Tarea2.pdf</span>
+                    <div class="progress">
+                        <div class="progress-60"></div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button>X</button>
+                </div>
+            </div>
+
+            <div class="file">
+                <div class="icon">
+                    <img src="img/word icon.png" width="48" alt="" />
+                </div>
+                <div class="title">
+                    <span class="name">Tarea1.pdf</span>
+                    <div class="size">1.2 Mb</div>
+                </div>
+                <div class="actions">
+                    <button>X</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stories-container">
+        <div class="story">
+            <div class="outer-border">
+                <div class="border">
+                    <a href="#">
+                        <img src="img/profile1.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="name">Jose Alfredo</div>
+        </div>
+
+        <div class="story">
+            <div class="outer-border">
+                <div class="border">
+                    <a href="#">
+                        <img src="img/profile2.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="name">Jorge Negrete</div>
+        </div>
+
+        <div class="story">
+            <div class="outer-border">
+                <div class="border">
+                    <a href="#">
+                        <img src="img/profile3.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="name">Pedro Infante</div>
+        </div>
+
+        <div class="story">
+            <div class="outer-border">
+                <div class="border">
+                    <a href="#">
+                        <img src="img/profile4.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="name">Francisco Flores</div>
+        </div>
+
+        <div class="story">
+            <div class="outer-border">
+                <div class="border">
+                    <a href="#">
+                        <img src="img/profile5.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="name">Rocio Durcal</div>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider-viewport">
+            <div class="slide" id="slide1">1</div>
+            <div class="slide" id="slide2">2</div>
+            <div class="slide" id="slide3">3</div>
+            <div class="slide" id="slide4">4</div>
+        </div>
+        <div class="links">
+            <a href="#slide1">1</a>
+            <a href="#slide2">2</a>
+            <a href="#slide3">3</a>
+            <a href="#slide4">4</a>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <div class="profile">
+            <img src="img/profile4.jpg" alt="" />
+            <div class="info">
+                <div class="header">
+                    <div class="photo">
+                        <img src="img/profile4.jpg" alt="" />
+                    </div>
+                    <div class="action">
+                        <button>Seguir</button>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <div class="name"><a href="#">Francisco Flores</a></div>
+                    <div class="username">@Frank</div>
+                </div>
+                <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vitae perferendis enim dolorum ullam itaque recusandae ad consequuntur laborum? Dolor soluta et porro cupiditate magni blanditiis? Nisi quibusdam quae cupiditate.
+                </div>
+
+                <div class="followers-container">
+                    <div class="following">
+                        <a href="#"> <span class="number">10 k</span> Siguiendo </a>
+                    </div>
+                    <div class="followers">
+                        <a href="#"> <span class="number">12 </span> Siguiendo </a>
+                    </div>
+                </div>
+
+                <div class="other">
+                    <a href="#">
+                        <div class="photos">
+                            <img src="img/profile4.jpg" alt="" />
+                            <img src="img/profile4.jpg" alt="" />
+                            <img src="img/profile4.jpg" alt="" />
+                        </div>
+                        <div class="names">
+                            10 personas que siguen esta cuenta.
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather-container">
+        <div class="current">
+            <div class="city">Zapopan</div>
+            <div class="day">Ahora</div>
+            <div class="row">
+                <div class="icon">
+                    <img src="img/cloudy.png" alt="" width="128" />
+                </div>
+                <div class="info">
+                    <div class="temperature">
+                        <span class="temperature-now">20°</span>
+                        <span class="temperature-low">/17°</span>
+                    </div>
+                    <div class="status">Parcialmente nublado</div>
+                </div>
+            </div>
+            <div class="more">
+                <div class="item">
+                    <div class="icon">
+                        <span class="material-icons"> water_drop </span>
+                    </div>
+                    <div class="text">
+                        <div class="value">9 Km/h</div>
+                        <div class="type">Viento</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icon">
+                        <span class="material-icons"> air </span>
+                    </div>
+                    <div class="text">
+                        <div class="value">93%</div>
+                        <div class="type">Probabilidad de lluvia</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icon">
+                        <span class="material-icons"> water </span>
+                    </div>
+                    <div class="text">
+                        <div class="value">31%</div>
+                        <div class="type">Humedad</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="day">
+                <div class="name">Lun</div>
+                <div class="weather">
+                    <div class="icon">
+                        <span class="material-icons"> wb_cloudy </span>
+                    </div>
+                    <div class="status">Nublado</div>
+                </div>
+                <div class="temperature">
+                    <span class="temperature-high">20°</span>
+                    <span class="temperature-low">14°</span>
+                </div>
+            </div>
+
+            <div class="day">
+                <div class="name">Mar</div>
+                <div class="weather">
+                    <div class="icon">
+                        <span class="material-icons"> ac_unit </span>
+                    </div>
+                    <div class="status">Nevado</div>
+                </div>
+                <div class="temperature">
+                    <span class="temperature-high">2°</span>
+                    <span class="temperature-low">-5°</span>
+                </div>
+            </div>
+
+            <div class="day">
+                <div class="name">Mier</div>
+                <div class="weather">
+                    <div class="icon">
+                        <span class="material-icons"> thunderstorm </span>
+                    </div>
+                    <div class="status">Tormentas eléctricas</div>
+                </div>
+                <div class="temperature">
+                    <span class="temperature-high">15°</span>
+                    <span class="temperature-low">14°</span>
+                </div>
+            </div>
+
+            <div class="day">
+                <div class="name">Jue</div>
+                <div class="weather">
+                    <div class="icon">
+                        <span class="material-icons"> wb_twilight </span>
+                    </div>
+                    <div class="status">Parcialmente soleado</div>
+                </div>
+                <div class="temperature">
+                    <span class="temperature-high">18°</span>
+                    <span class="temperature-low">17°</span>
+                </div>
+            </div>
+
+            <div class="day">
+                <div class="name">Vie</div>
+                <div class="weather">
+                    <div class="icon">
+                        <span class="material-icons"> wb_sunny </span>
+                    </div>
+                    <div class="status">Soleado</div>
+                </div>
+                <div class="temperature">
+                    <span class="temperature-high">25°</span>
+                    <span class="temperature-low">10°</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

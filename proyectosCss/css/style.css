@@ -1,0 +1,128 @@
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.collapsed {
+    display: none;
+}
+
+nav {
+    background-color: #1C2833;
+    color: white;
+    width: 100%;
+}
+
+nav .mobile {
+    display: none;
+}
+
+nav .logo {
+    min-width: 250px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: rgb(91, 137, 149);
+}
+
+nav .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .desktop .primary,
+nav .desktop .secondary {
+    display: flex;
+}
+
+nav .secondary.full {}
+
+nav .secondary.mini {
+    display: none;
+}
+
+@media screen and (max-width: 894px) {
+    nav .logo {
+        min-width: 100px;
+    }
+
+    nav .secondary.full {
+        display: none;
+    }
+
+    nav .secondary.mini {
+        display: block !important;
+    }
+
+    nav .secondary.mini .submenu {
+        background-color: #1C2833;
+        position: absolute;
+        display: none;
+        width: 200px;
+        right: 0;
+    }
+
+    nav .secondary.mini:hover .submenu {
+        display: block;
+    }
+
+    nav .desktop .secondary.mini .more button {
+        padding: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: white !important;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav .desktop {
+        display: none;
+    }
+
+    nav .mobile {
+        display: block;
+    }
+
+    nav .mobile .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .mobile .header .logo {
+        flex: 1;
+        text-align: center;
+    }
+
+    nav .mobile .header .more button {
+        padding: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    nav .mobile .header .more button:hover {
+        background-color: white;
+        color: black;
+    }
+}

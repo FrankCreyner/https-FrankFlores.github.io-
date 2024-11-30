@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/css/style.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/script1.js"></script>
+    <script src="./js/recipientes.js"></script>
+    <script src="./js/calculos.js"></script>
+    <script src="./js/script3.js"></script>
+    <script src="./js/plotly-2.35.2.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo">Francisco Javier Flores Padilla <span style="color: #201E43;">Ingeniero en Computación</span>
+        </h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="./sobreMi.html">Sobre Mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
+
+<div class="cajas">
+
+    <header class="encabezado contenedor1">
+        <h1 class="header-1">Diseño de recipientes a presión</h1>
+        <img src="img/favicon.png" alt="Recipiente">
+    </header>
+    <main class="contenedor contenedor1">
+
+        <section class="inputs">
+            <h2 class="head-2">Datos de entrada</h2>
+            <div class="var-entradas">
+                <fieldset>
+                    <legend>
+                        Variables de entrada
+                    </legend>
+                    <div class="datos">
+
+                        <div class="dato">
+                            <label for="">Presión:</label>
+                            <input placeholder="MPa" class="input-data" type="number" name="" id="presion">
+                        </div>
+                        <div class="dato">
+                            <label for="">Diámetro:</label>
+                            <input placeholder="metros" class="input-data" type="number" name="" id="diametro">
+                        </div>
+
+                        <div class="dato">
+                            <label for="">Material:</label>
+                            <select class="input-data" name="" id="Material">
+                                <option value="1">SA-283 gr D</option>
+                                <option value="2">SA-662 gr B</option>
+                                <option value="3">SA-537</option>
+                                <option value="4">SA-515 gr 60</option>
+                                <option value="5">SA-516 gr 70</option>
+                            </select>
+                        </div>
+                        <div class="dato">
+                            <label for="">Longitud:</label>
+                            <input placeholder="metros" class="input-data" type="number" name="" id="Longitud">
+                        </div>
+                        <div class="dato">
+                            <label for="">Eficiencia de la junta:</label>
+                            <select class="input-data" name="" id="Eficiencia">
+                                <option value="1">Radiografiado completo (100%)</option>
+                                <option value="2">Radiografiado parcial (85%)</option>
+                                <option value="3">Sin Radiografiado (75%)</option>
+
+                            </select>
+                        </div>
+
+                        <div class="dato">
+                            <label for="">ρ del líquido:</label>
+                            <input placeholder="kg/m³" class="input-data" type="number" name="" id="Densidad">
+                        </div>
+
+                        <div class="dato">
+                            <label for="">Nivel:</label>
+                            <input placeholder="metros" class="input-data" type="number" name="" id="Nivel">
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+
+        <section class="output">
+            <h2 class="head-2">Datos de salida</h2>
+            <div class="var-entradas">
+                <fieldset>
+                    <legend class="alinear-izquierda">
+                        Variables de salida
+                    </legend>
+                    <div class="datos">
+
+                        <div class="dato">
+                            <label for="">Espesor calculado de las tapas:</label>
+                            <input disabled class="input-data" type="number" name="" id="espesortapas">
+                        </div>
+                        <div class="dato">
+                            <label for="">Espesor real tapas:</label>
+                            <select class="input-data" name="" id="espesorrealtapa">
+                                <option value="1">1/8 de pulgada</option>
+                                <option value="2">1/4 de pulgada</option>
+                                <option value="3">1/3 de pulgada</option>
+                                <option value="4">3/8 de pulgada</option>
+                                <option value="5">1/2 de pulgada</option>
+                                <option value="6">5/8 de pulgada</option>
+                                <option value="7">3/4 de pulgada</option>
+                                <option value="8">7/8 de pulgada</option>
+                                <option value="9">1 de pulgada</option>
+                                <option value="10">1 1/4 de pulgada</option>
+                                <option value="11">1 3/8 de pulgada</option>
+                                <option value="12">1 1/2 de pulgada</option>
+                                <option value="13">1 5/8 de pulgada</option>
+                                <option value="14">1 3/4 de pulgada</option>
+                                <option value="15">2 de pulgada</option>
+                            </select>
+                        </div>
+                        <div class="dato">
+                            <label for="">Espesor calculado del cuerpo:</label>
+                            <input disabled class="input-data" type="number" name="" id="espesorcuerpo">
+                        </div>
+                        <div class="dato">
+                            <label for="">Espesor real del cuerpo:</label>
+                            <select class="input-data" name="" id="espesorrealcuerpo">
+                                <option value="1">1/8 de pulgada</option>
+                                <option value="2">1/4 de pulgada</option>
+                                <option value="3">1/3 de pulgada</option>
+                                <option value="4">3/8 de pulgada</option>
+                                <option value="5">1/2 de pulgada</option>
+                                <option value="6">5/8 de pulgada</option>
+                                <option value="7">3/4 de pulgada</option>
+                                <option value="8">7/8 de pulgada</option>
+                                <option value="9">1 de pulgada</option>
+                                <option value="10">1 1/4 de pulgada</option>
+                                <option value="11">1 3/8 de pulgada</option>
+                                <option value="12">1 1/2 de pulgada</option>
+                                <option value="13">1 5/8 de pulgada</option>
+                                <option value="14">1 3/4 de pulgada</option>
+                                <option value="15">2 de pulgada</option>
+                            </select>
+                        </div>
+                        <div class="dato">
+                            <label for="">Volumen el líquido:</label>
+                            <input disabled class="input-data" type="number" name="" id="volumenliquido">
+                        </div>
+                        <div class="dato">
+                            <label for="">Peso del líquido:</label>
+                            <input disabled class="input-data" type="number" name="" id="pesoliquido">
+                        </div>
+                        <div class="dato">
+                            <label for="">Peso del equipo:</label>
+                            <input disabled class="input-data" type="number" name="" id="pesoequipo">
+                        </div>
+                        <div class="dato">
+                            <label for="">Peso del equipo lleno:</label>
+                            <input disabled class="input-data" type="number" name="" id="pesoequipolleno">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <div class="boton-alinear">
+            <a onclick="calcularepFcn()" class="boton">Calcular</a>
+        </div>
+    </main>
+    <script src="./js/recipientes.js"></script>
+
+</div>
+
+<div class="cajas">
+    <h1>IMC corporal</h1>
+
+    <div class="contenedor contenedor2">
+        <div class="entrada">
+            <label for="masa">Masa:</label>
+            <input type="number" class="entradaInput" name="masa" id="masa" placeholder="Kg">
+        </div>
+        <div class="entrada">
+            <label for="estatura">Estatura:</label>
+            <input type="number" class="entradaInput" name="estatura" id="estatura" placeholder="Metros">
+        </div>
+        <div class="salida">
+            <label for="output">Tu IMC es:</label>
+            <input disabled type="text" name="output" id="output" placeholder="Salida">
+        </div>
+
+
+        <button onclick="calcular()">Calcular</button>
+        <script src="./js/script.js"></script>
+    </div>
+</div>
+
+<div class="cajas">
+    <h1>Convertidor de temperatura</h1>
+    <div class="caja">
+        <div class="input">
+            <select class = "selIn" name="in" id="in">
+                <option value="1">Celsius</option>
+                <option value="2">Farenheit</option>
+                <option value="3">Kelvin</option>
+                <option value="4">Rankine</option>
+            </select>
+            <input type="number" name="input" id="input" placeholder="Unidades a convertir...">
+        </div>
+        <div class ="output">
+            <select class = "selOut" name="out" id="out">
+                <option value="1">Celsius</option>
+                <option value="2">Farenheit</option>
+                <option value="3">Kelvin</option>
+                <option value="4">Rankine</option>
+            </select>
+            <input type="number" name="output" id="output" placeholder="Unidades convertidas">
+        </div>
+
+        <button class="boton" onclick="convertir()">Convertir</button>
+        <script src="./js/script2.js"></script>
+    </div>
+
+</div>
+
+<div class="cajas">
+    <h1>Diseño de orejetas</h1>
+    <div class="container">
+        <h1>CARGA AXIAL - CARGAS PERMISIBLES</h1>
+        <h2>DATOS</h2>
+        <form>
+            <fieldset>
+                <legend>
+                    datos de entrada
+                </legend>
+                <div class="data-inputs">
+                    <h3>Datos de la orejeta</h3>
+                    <div class="lug">
+                        <label for="">Material de la orejeta: </label>
+                        <select onchange="materialesplaca()" id="materiales_orejeta">
+                            <option selected value="0">Al 2024-T3 AMS 4037 / AMS QQ-A-250/4 Sheet 0.008-0.009 Thick
+                                S-Basis</option>
+                            <option value="1">Al 2024-T3 AMS 4462 / MIL-QQ-A-250/5 Clad Sheet 0.008-0.009 Thick A-Basis
+                            </option>
+                            <option value="2">Al 2027-T3511 AMS 4183 Profile,Extrusion - Area 0.750-1.500 Thick A-Basis
+                            </option>
+                            <option value="3">Al 2124-T851 AMS 4101 Plate - Area 1.000-1.500 Thick A-Basis</option>
+                            <option value="4">Al 7075-T6 AMS 4044 Plate,Bare - Area 0.250-0.499 Thick A-Basis</option>
+                            <option value="5">Al 7150-T76151 AMS 4306 Plate 1.001-1.5 Thick A-Basis</option>
+                        </select>
+                    </div>
+                    <div class="lug-datos">
+                        <div class="lug-dato">
+                            <label for="">$W =$</label>
+                            <input id="width" placeholder="in" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$a =$</label>
+                            <input id="a" placeholder="in" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$t_{1} =$</label>
+                            <input id="t1" placeholder="in" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$t_{2} =$</label>
+                            <input id="t2" placeholder="in" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$F_{tu} =$</label>
+                            <input disabled id="ftu" placeholder="psi" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$F_{ty} =$</label>
+                            <input disabled id="fty" placeholder="psi" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$F_{cy} =$</label>
+                            <input disabled id="fcy" placeholder="psi" type="number">
+                        </div>
+                    </div>
+                    <!-- Sujetador -->
+                    <h3>Datos del sujetador</h3>
+                    <div class="sujetador-datos">
+                        <div class="sujetador">
+                            <label for="">Tipo de sujetardor: </label>
+                            <select onchange="materialesujetador()" id="material_sujetador">
+                                <option selected value="0">B0205020AD5 - Al 2117-T4</option>
+                                <option value="1">B0205020AD6 - Al 2117-T4</option>
+                                <option value="2">B0205020AD7 - Al 2117-T4</option>
+                                <option value="3">B0205020AD8 - Al 2117-T4</option>
+                                <option value="4">B0205020E6 - Al 7050-T73</option>
+                                <option value="5">B0205020E7 - Al 7050-T73</option>
+                                <option value="6">B0205020E8 - Al 7050-T73</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="lug-datos">
+                        <div class="lug-dato">
+                            <label for="">$Ø_{barreno}=$</label>
+                            <input disabled id="dbarreno" placeholder="in" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$P_{cortante_{Permitido}} =$</label>
+                            <input disabled id="Ppermitido" placeholder="in" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$F_{tu} =$</label>
+                            <input disabled placeholder="psi" type="number" id="sftu">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$F_{ty} =$</label>
+                            <input disabled placeholder="psi" type="number" id="sfty">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$F_{cy} =$</label>
+                            <input disabled placeholder="psi" type="number" id="sfcy">
+                        </div>
+                    </div>
+                    <h3>Requerimientos de diseño</h3>
+                    <div class="lug-datos">
+                        <div class="lug-dato">
+                            <label for="">Factor de ajuste $(FA) =$</label>
+                            <input id="ff" placeholder="in" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$MS_{mín} =$</label>
+                            <input id="ms" placeholder="" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$P_{aplicada} =$</label>
+                            <input id="paplicada" placeholder="lb" type="number">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        <h2>CALCULOS</h2>
+        <form>
+            <fieldset>
+                <legend>
+                    datos de salida
+                </legend>
+                <div class="data-inputs">
+                    <h3>Datos de la geometría de la orejeta</h3>
+
+                    <div class="lug-datos">
+                        <div class="lug-dato">
+                            <label for="">$a/Ø_{barreno} =$</label>
+                            <input disabled id="ed1" placeholder="" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$W/Ø_{barreno} =$</label>
+                            <input disabled id="w_dhole" placeholder="" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$A_{br} =$</label>
+                            <input id="abr" disabled placeholder="in²" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$A_{t} = (W-Ø_{barreno})t$</label>
+                            <input id="at" disabled placeholder="in²" type="number">
+                        </div>
+
+                    </div>
+
+                    <h3>Falla por tensión</h3>
+
+                    <div class="lug-datos">
+                        <div class="lug-dato">
+                            <label for="">$a/Ø_{barreno}=$</label>
+                            <input id="ed_tension" disabled placeholder="" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$K_{t} =$</label>
+                            <input id="kt" disabled placeholder="" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$P_{tu} = K_{t}\bullet F_{tu} \bullet (W-Ø_{barreno})\bullet t_{2}$</label>
+                            <input id="ptu" disabled placeholder="lb" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$MS = (P_{permitida}/P_{aplicada}\bullet FA)-1 $</label>
+                            <input disabled id="MOS" placeholder="" type="number">
+                        </div>
+                        <div style="text-align: center;" class="lug-dato">
+                            <label for=""></label>
+                            <label for="">$>=$</label>
+
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$MS_{mín}$</label>
+                            <input disabled id="resultado" placeholder="" type="text">
+                        </div>
+                    </div>
+
+                    <h3>Falla en Shield bearing</h3>
+
+                    <div class="lug-datos">
+                        <div class="lug-dato">
+                            <label for="">$a/Ø_{barreno}=$</label>
+                            <input id="ed_bearing" disabled placeholder="" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$K_{br} =$</label>
+                            <input id="kbr" placeholder="in" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$P_{bru} = K_{br}\bullet F_{tu} \bullet d_{h}\bullet t_{2}$</label>
+                            <input id="pbru" disabled placeholder="lb" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$MS = (P_{permitida}/P_{aplicada}\bullet FA)-1 $</label>
+                            <input disabled id="MOS2" placeholder="" type="number">
+                        </div>
+                        <div style="text-align: center;" class="lug-dato">
+                            <label for=""></label>
+                            <label for="">$>=$</label>
+
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$MS_{mín}$</label>
+                            <input disabled id="resultado2" placeholder="" type="text">
+                        </div>
+                    </div>
+
+                    <h3>Falla en Yield</h3>
+
+                    <div class="lug-datos">
+                        <div class="lug-dato">
+                            <label for="">$a/Ø_{barreno}=$</label>
+                            <input id="ed_yield" disabled placeholder="" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$C=$</label>
+                            <input id="C" placeholder="in" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$P_{y} = C\bullet (F_{tyx}/F_{tux}) \bullet (P_{u})min$</label>
+                            <input id="py" disabled placeholder="lb" type="number">
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$MS = (P_{permitida}/P_{aplicada}\bullet FA)-1 $</label>
+                            <input disabled id="MOS3" placeholder="" type="number">
+                        </div>
+                        <div style="text-align: center;" class="lug-dato">
+                            <label for=""></label>
+                            <label for="">$>=$</label>
+
+                        </div>
+                        <div class="lug-dato">
+                            <label for="">$MS_{mín}$</label>
+                            <input disabled id="resultado3" placeholder="" type="text">
+                        </div>
+                    </div>
+
+                </div>
+            </fieldset>
+            <div class="btn-alinear">
+                <input class="btn" onclick="calcular()" type="button" value="calcular">
+                <script src="./js/calculos.js"></script>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+<div class="cajas" onload="crearPlano()">
+
+    <h1>Graficas y funciones</h1>
+
+    <div id="contenedorOpciones">
+        <div class="contenedorLineal">
+            <h2>Lineal</h2>
+            <input type="number" class="lineal" value="1" placeholder="1" id="factorLineal">
+            x +
+            <input type="number" class="lineal" value="0" placeholder="0" id="agregadoLineal"> 
+            <button onclick="lineal()">Graficar</button>
+        </div>
+
+        <div class="contenedorSenoidal">
+            <h2>Senoidal</h2>
+            <input type="number" class="senoidal" value="1" placeholder="1" id="factorSenoidal">
+            sen(
+            <input type="number" class="senoidal" value="1" placeholder="1" id="factorLinealSenoidal">
+            x)
+            <button onclick="senoidal()">Graficar</button>
+        </div>
+
+        <div class="contenedorInversa">
+            <h2>Inversa</h2>
+            <input type="number" class="inversa" value="1" placeholder="1" id="factorInversa">
+            /x +
+            <input type="number" class="inversa" value="0" placeholder="0" id="agregadoInversa">
+            <button onclick="inversa()">Graficar</button>
+        </div>
+
+        <div class="contenedorCampana">
+            <h2>Campana</h2>
+            <input type="number" class="campana" value="1" placeholder="1" id="factorCampana">
+            e^(- |
+            <input type="number" class="campana" value="1" placeholder="1" id="factorLinealCampana">
+            | x^2)
+            <button onclick="campana()">Graficar</button>
+        </div>
+
+        <div class="contenedorPolinomial">
+            <h2>Polinomial</h2>
+            <input type="number" class="polinomial" value="1" placeholder="1" id="factorPolinomialCuadratico">
+            x^2 +
+            <input type="number" class="polinomial" value="1" placeholder="1" id="factorPolinomialLineal">
+            x +
+            <input type="number" class="polinomial" value="0" placeholder="0" id="agregadoPolinomial">
+            <button onclick="polinomial()">Graficar</button>
+        </div>
+    </div>
+    <div id="contenedorGrafica"></div>
+
+
+</div>
+</body>
+
+</html>
