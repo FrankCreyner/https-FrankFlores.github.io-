@@ -44,5 +44,5 @@ function convertir(){
 
         inp = (inp == 'number')?inp.toFixed(2):inp;
     }
-    document.querySelector("#output").value = out;
+    document.querySelector("#outp").value = out;
 }
